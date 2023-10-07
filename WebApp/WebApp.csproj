@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;OtherNameThanDebug</Configurations>
+  </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OtherNameThanDebug|AnyCPU'">
+	    <DefineConstants>DEBUG;TRACE;FULL</DefineConstants>
+    </PropertyGroup>
+
+</Project>
